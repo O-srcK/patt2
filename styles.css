@@ -20,7 +20,7 @@ body {
 }
 
 :root {
-    --t: 40s;
+    --t: 4s;
     --q: 3;
     /* Given */
     --n: 2.3px;
