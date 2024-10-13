@@ -112,14 +112,14 @@ body {
 }
 
 /* Colors for X shapes */
-.pink .outer   {background-color: #FF00BF;}
-.pink .inner   {background-color: #8C0069;}
-.yellow .outer {background-color: #FFBF00;}
-.yellow .inner {background-color: #8C6900;}
-.green .outer  {background-color: #00FF40;}
-.green .inner  {background-color: #008C23;}
-.blue .outer   {background-color: #0040FF;}
-.blue .inner   {background-color: #00238C;}
+.c1 .outer   {background-color: #FF00BF;}
+.c1 .inner   {background-color: #8C0069;}
+.c2 .outer {background-color: #FFBF00;}
+.c2 .inner {background-color: #8C6900;}
+.c3 .outer  {background-color: #00FF40;}
+.c3 .inner  {background-color: #008C23;}
+.c4 .outer   {background-color: #0040FF;}
+.c4 .inner   {background-color: #00238C;}
 
 /* Apply the same keyframes as before */
 @keyframes colorCycleOuter {
@@ -141,11 +141,15 @@ body {
 }
 
 @keyframes colorCycleInner {
-    0%   {background-color: #8C0069;} /* Pink Inner */
-    25%  {background-color: #8C6900;} /* Yellow Inner */
-    50%  {background-color: #008C23;} /* Green Inner */
-    75%  {background-color: #00238C;} /* Blue Inner */
-    100% {background-color: #8C0069;} /* Back to Pink Inner */
+    0%     {background-color: #8C0069;} /* Pink Inner */
+    12.5%  {background-color: #8C0069;} /* Pink Inner */
+    25%    {background-color: #8C6900;} /* Yellow Inner */
+    37.5%  {background-color: #8C0069;} /* Pink Inner */
+    50%    {background-color: #008C23;} /* Green Inner */
+    62.5%  {background-color: #8C0069;} /* Pink Inner */
+    75%    {background-color: #00238C;} /* Blue Inner */
+    87.5%  {background-color: #8C0069;} /* Pink Inner */
+    100%   {background-color: #8C0069;} /* Back to Pink Inner */
 }
 
 /* Outer and inner animation settings for all shapes */
@@ -157,37 +161,52 @@ body {
 }
 
 /* Pink shapes */
-.pink .outer, .yellow .outer, .green .outer, .blue .outer  {
+.c1 .outer, .c2 .outer, .c3 .outer, .c4 .outer, .c5 .outer, .c6 .outer, .c7 .outer, .c8 .outer   {
     animation-name: colorCycleOuter;
 }
 
-.pink .inner, .yellow .inner, .green .inner, .blue .inner {
+.c1 .inner, .c2 .inner, .c3 .inner, .c4 .inner, .c5 .inner, .c6 .inner, .c7 .inner, .c8 .inner {
     animation-name: colorCycleInner;
 }
 
 /* Stagger the animation delays */
 
-/* Shapes starting at 25% (5s delay for a 20s cycle) */
-.pink .outer,
-.pink .inner {
+.c1 .outer,
+.c1 .inner {
     animation-delay: 0s;
 }
 
-/* Shapes starting at 50% (10s delay) */
-.yellow .outer,
-.yellow .inner {
-    animation-delay: calc(var(--t) * 3 / -4);
+.c2 .outer,
+.c2 .inner {
+    animation-delay: calc(var(--t) * 7 / -8);
 }
 
-/* Shapes starting at 75% (15s delay) */
-.green .outer,
-.green .inner {
-    animation-delay: calc(var(--t) / -2);
+.c3 .outer,
+.c3 .inner {
+    animation-delay: calc(var(--t) * 6 / -8);
 }
 
-/* Shapes starting at 0% (no delay) */
-.blue .outer,
-.blue .inner {
-    animation-delay: calc(var(--t) / -4);
-    /* No delay, starts immediately */
+.c4 .outer,
+.c4 .inner {
+    animation-delay: calc(var(--t) * 5/ -8);
+}
+
+.c5 .outer,
+.c5 .inner {
+    animation-delay: calc(var(--t) * 4/ -8);
+}
+
+.c6 .outer,
+.c6 .inner {
+    animation-delay: calc(var(--t) * 3 / -8);
+}
+
+.c7 .outer,
+.c7 .inner {
+    animation-delay: calc(var(--t) * 2/ -8);
+}
+
+.c8 .outer,
+.c8 .inner {
+    animation-delay: calc(var(--t) / -8);
 }
