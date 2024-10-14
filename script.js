@@ -1,15 +1,16 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector('.container');
     const blockTemplate = document.getElementById('unitary-block-template').content;
 
     // Calculate dimensions
-    const blockHeight = 20 * 16 + 5 * 16; // Height of a unitary-block including spacing
-    const blockWidth = 20 * 16 + 5; // Width of a unitary-block including spacing
+    const blockHeight = 30 * 16 + 7.5 * 16; // Height of a unitary-block including spacing
+    const blockWidth = 20 * 16 + 20; // Width of a unitary-block including spacing
     const screenHeight = window.innerHeight; // Total height of the screen
     const screenWidth = window.innerWidth; // Total width of the screen
-
-    const rowCount = Math.ceil(screenHeight / blockHeight); // Calculate the number of rows needed
-    const blockCount = Math.ceil(screenWidth / blockWidth); // Calculate the number of blocks per row
+    
+    const rowCount = Math.floor(screenHeight / blockHeight); // Calculate the number of rows needed
+    const blockCount = Math.floor(screenWidth / blockWidth); // Calculate the number of blocks per row
 
     // Populate rows and blocks to fill the screen horizontally and vertically
     for (let i = 0; i < rowCount; i++) {
