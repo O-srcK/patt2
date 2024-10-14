@@ -20,15 +20,12 @@ body {
 }
 
 :root {
-    --t: 10s;
-    --q: 3;
-    /* Given */
-    --n: 2.3px;
-    /* Original radius */
-    --s: 5px;
-    /* Spacing between shapes */
-    --w1: 20px;
-    /* Outer long side W */
+    --t: 30s;
+    --q: 3;     /* Given */
+    --w1: 30px; /* Outer long side W */
+    --n: calc(var(--w1) / 8.7); /* Original radius */
+    --s: calc(var(--w1) / 4);   /* Spacing between shapes */
+   
     --w2: calc(var(--w1) - (2 * var(--n)));
     --h2: calc(var(--w2) / var(--q));
     --h1: calc(var(--h2) + (2 * var(--n)));
@@ -170,11 +167,11 @@ body {
 }
 
 /* Pink shapes */
-.c1 .outer, .c2 .outer, .c3 .outer, .c4 .outer, .c5 .outer, .c6 .outer, .c7 .outer, .c8 .outer   {
+.c1 .outer, .c2 .outer, .c3 .outer, .c4 .outer, .c5 .outer, .c6 .outer, .c7 .outer, .c8 .outer, .c9 .outer, .c10 .outer, .c11 .outer, .c12 .outer, .c13 .outer, .c14 .outer, .c15 .outer, .c16 .outer {
     animation-name: colorCycleOuter;
 }
 
-.c1 .inner, .c2 .inner, .c3 .inner, .c4 .inner, .c5 .inner, .c6 .inner, .c7 .inner, .c8 .inner {
+.c1 .inner, .c2 .inner, .c3 .inner, .c4 .inner, .c5 .inner, .c6 .inner, .c7 .inner, .c8 .inner, .c9 .inner, .c10 .inner, .c11 .inner, .c12 .inner, .c13 .inner, .c14 .inner, .c15 .inner, .c16 .inner {
     animation-name: colorCycleInner;
 }
 
@@ -187,36 +184,75 @@ body {
 
 .c2 .outer,
 .c2 .inner {
-    animation-delay: calc(var(--t) * 7 / -8);
+    animation-delay: calc(var(--t) * 15 / -16);
 }
 
 .c3 .outer,
 .c3 .inner {
-    animation-delay: calc(var(--t) * 6 / -8);
+    animation-delay: calc(var(--t) * 14 / -16);
 }
 
 .c4 .outer,
 .c4 .inner {
-    animation-delay: calc(var(--t) * 5/ -8);
+    animation-delay: calc(var(--t) * 13 / -16);
 }
 
 .c5 .outer,
 .c5 .inner {
-    animation-delay: calc(var(--t) * 4/ -8);
+    animation-delay: calc(var(--t) * 12 / -16);
 }
 
 .c6 .outer,
 .c6 .inner {
-    animation-delay: calc(var(--t) * 3 / -8);
+    animation-delay: calc(var(--t) * 11 / -16);
 }
 
 .c7 .outer,
 .c7 .inner {
-    animation-delay: calc(var(--t) * 2/ -8);
+    animation-delay: calc(var(--t) * 10 / -16);
 }
 
 .c8 .outer,
 .c8 .inner {
-    animation-delay: calc(var(--t) / -8);
+    animation-delay: calc(var(--t) * 9 / -16);
 }
 
+.c9 .outer,
+.c9 .inner {
+    animation-delay: calc(var(--t) * 8 / -16);
+}
+
+.c10 .outer,
+.c10 .inner {
+    animation-delay: calc(var(--t) * 7 / -16);
+}
+
+.c11 .outer,
+.c11 .inner {
+    animation-delay: calc(var(--t) * 6 / -16);
+}
+
+.c12 .outer,
+.c12 .inner {
+    animation-delay: calc(var(--t) * 5 / -16);
+}
+
+.c13 .outer,
+.c13 .inner {
+    animation-delay: calc(var(--t) * 4 / -16);
+}
+
+.c14 .outer,
+.c14 .inner {
+    animation-delay: calc(var(--t) * 3 / -16);
+}
+
+.c15 .outer,
+.c15 .inner {
+    animation-delay: calc(var(--t) * 2 / -16);
+}
+
+.c16 .outer,
+.c16 .inner {
+    animation-delay: calc(var(--t) * 1 / -16);
+}
