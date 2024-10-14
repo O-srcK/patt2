@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const blockTemplate = document.getElementById('unitary-block-template').content;
 
     // Calculate dimensions
-    const blockHeight = 20 * 8 + 5 * 8; // Height of a unitary-block including spacing
-    const blockWidth = 20 * 8 + 5; // Width of a unitary-block including spacing
+    const blockHeight = 20 * 16 + 5 * 16; // Height of a unitary-block including spacing
+    const blockWidth = 20 * 16 + 5; // Width of a unitary-block including spacing
     const screenHeight = window.innerHeight; // Total height of the screen
     const screenWidth = window.innerWidth; // Total width of the screen
 
