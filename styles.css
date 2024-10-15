@@ -20,7 +20,7 @@ body {
 }
 
 :root {
-    --t: 3s;
+    --t: 32s;
     --q: 3;     /* Given */
     --w1: 40px; /* Outer long side W */
     --n: calc(var(--w1) / 8.7); /* Original radius */
