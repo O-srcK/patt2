@@ -130,7 +130,7 @@ body {
     87.5%  {background-color: #8000FF;} 
     100%   {background-color: #FF00BF;} /* Back to Pink */
 }
-/* */
+/* 
 @keyframes colorCycleInner {
     0%     {background-color: #8C0069;} // OG 
     12.5%  {background-color: #B80015;} 
@@ -141,12 +141,12 @@ body {
     75%    {background-color: #00238C;} 
     87.5%  {background-color: #5C00CC;} 
     100%   {background-color: #8C0069;} 
-} 
+}  */
 
-/*
+
  
 @keyframes colorCycleInner {
-    0%     {background-color: #008C23;} /* shifted, green is first 
+    0%     {background-color: #008C23;} /* shifted, green is first */
     12.5%  {background-color: #00B8CC;} 
     25%    {background-color: #00238C;} 
     37.5%  {background-color: #5C00CC;} 
@@ -155,7 +155,7 @@ body {
     75%    {background-color: #8C6900;} 
     87.5%  {background-color: #5BB814;} 
     100%   {background-color: #008C23;} 
-} */
+} 
 
 
 /* Outer and inner animation settings for all shapes */
