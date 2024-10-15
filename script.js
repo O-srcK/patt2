@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Calculate dimensions
     const blockHeight = 30 * 16 + 7.5 * 16; // Height of a unitary-block including spacing
-    const blockWidth = 20 * 16 + 20; // Width of a unitary-block including spacing
+    const blockWidth = 30 * 16 + 30; // Width of a unitary-block including spacing
     const screenHeight = window.innerHeight; // Total height of the screen
     const screenWidth = window.innerWidth; // Total width of the screen
     
